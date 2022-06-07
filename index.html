@@ -9,19 +9,21 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Stealth App</title>
   </head>
-  <body class="bg-blk">
+  <body class="bg-black">
     <!-- Navbar Here -->
     <section class="navigation">
       <div class="nav-container">
         <div class="brand">
-          <img
-            src="./images/Stealthlogointro.png"
-            class="h-20 object-contain"
-            alt=""
-          />
+          <a href="./index.html">
+            <img
+              src="./images/Stealthlogointro.png"
+              class="h-20 object-contain"
+              alt=""
+            />
+          </a>
         </div>
         <nav>
           <div class="nav-mobile">
@@ -59,6 +61,19 @@
             </li>
             <li>
               <a href="#!">Raise a Ticket</a>
+            </li>
+            <li class="">
+              <a href="#!" class="w-full flex items-center">
+                <img src="./images/stealth-icon.png" class="h-10 w-10 p-2 bg-gray-700 rounded-full objet-contain" alt="" />
+              </a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="./Login.html">Login</a>
+                </li>
+                <li>
+                  <a href="./LostYourPassword.html">Forgot Your Password</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
