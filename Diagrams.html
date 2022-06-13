@@ -91,7 +91,26 @@
       </div>
     </section>
 
+    <!-- Search Bar Starts Here -->
+    <form class="flex items-center mt-4">
+      <label for="simple-search" class="sr-only">Search</label>
+      <div class="relative w-full">
+        <div
+          class="flex absolute inset-y-0 inset-x-20 items-center pl-3 pointer-events-none"
+        ></div>
+        <input
+          onkeyup="SearchFunctionality()"
+          type="text"
+          id="myInput"
+          class="bg-gray-50 border border-gray-300 text-black text-sm w-1/2 m-auto rounded-lg focus:ring-blue-500 focus:border-blue-500 block pl-6 text-lg py-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Search ..."
+          required
+        />
+      </div>
+    </form>
+
     <!-- Table Starts Here -->
+
     <table class="w-9/12 m-auto my-10">
       <thead class="bg-blue-800 h-10 text-white">
         <tr class="text-left">
@@ -101,7 +120,7 @@
           <th class="px-6">Download</th>
         </tr>
       </thead>
-      <tbody class="text-white">
+      <tbody class="text-white" id="myUL">
         <tr class="">
           <td class="px-6">The Sliding Mr. Bones (Next Stop, Pottersville)</td>
           <td class="px-6">Malcolm Lockyer</td>
